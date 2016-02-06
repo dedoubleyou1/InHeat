@@ -73,13 +73,13 @@ public class GameManager : MonoBehaviour {
 
 	public void gameOver ()
 	{
-		Debug.Log ("GAME OVAAAAAAAA");
 		state = State.ENDGAME;
 		wonGame = 1;
+		dialogueScript.hideUI (); 
 	}
 	public void gameWin(){
-		Debug.Log ("YOU WIN NOW GO PEE IN HIS MOUTH"); 
 		state = State.ENDGAME;
 		wonGame = 2;
+		dialogueScript.hideUI (); 
 	}
 }

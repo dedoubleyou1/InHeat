@@ -122,15 +122,6 @@ public class Dialogue : MonoBehaviour {
 
 		InvokeRepeating("spawnUI", 2, 10);
 	}
-	void Update(){
-
-		if (dancing.gameOva) {
-			Debug.Log ("I am in gameOva"); 
-			hideUI (); 
-			dancing.gameOva = false; 
-
-		}
-	}
 
 	void spawnUI ()
 	{
@@ -155,7 +146,7 @@ public class Dialogue : MonoBehaviour {
 		}
 	}
 
-	void hideUI ()
+	public void hideUI ()
 	{
 		// Hide question
 		questionUI.SetActive (false); 

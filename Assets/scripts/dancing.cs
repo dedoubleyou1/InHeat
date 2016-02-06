@@ -2,6 +2,120 @@
 using System.Collections;
 
 public class dancing : MonoBehaviour {
+
+	Animator animator;
+	AudioSource myAudio; 
+	private arrowManager arrowManage;
+	private GameManager gameManager;
+	public GameObject arrow;
+
+
+	float  changeDirectionTimer = 0;
+	float  timeBeforeChangeDirection = 2;
+	string currentDirection = "left";
+	bool   moveMadeForThisTurn = false;
+	int    playerDancingHealth = 10;
+
+	void Start () {
+
+		myAudio = GetComponent<AudioSource> (); 
+		gameManager = Camera.main.GetComponent<GameManager> ();
+		arrowManage = arrow.GetComponent<arrowManager> ();
+		animator = GetComponent<Animator> ();
+
+		ChangeDirection ();
+	}
+
+	void Update () {
+		Debug.Log (playerDancingHealth);
+
+		// Check for game over
+		if (playerDancingHealth <= 0) {
+			animator.SetInteger ("state", 0);
+			arrowManage.HideArrow ();
+			gameManager.gameOver();
+			this.enabled = false;
+		}
+
+		// Change direction every 5 seconds
+		changeDirectionTimer += Time.deltaTime;
+		if (changeDirectionTimer >= timeBeforeChangeDirection) {
+			ChangeDirection();
+
+			// If move never made
+			if (!moveMadeForThisTurn) {
+				playerDancingHealth--;
+			}
+
+			moveMadeForThisTurn = false;
+			changeDirectionTimer = 0;
+		}
+
+		// Check if player made a move and whether its the correct move
+		// Notes:  only allow one move per animal's movement, whether it be correct or incorrect
+		if (!moveMadeForThisTurn) {
+			string directionPushed = GetKeyDown ();
+
+			if (directionPushed != null) {
+				moveMadeForThisTurn = true;
+
+				if (directionPushed == currentDirection) { // If made the correct move
+					myAudio.Play (); 
+				} else { // If made wrong move
+					// Turn arrow red then fade out
+					playerDancingHealth--;
+				}
+
+			}
+		}
+	}
+
+	void ChangeDirection () {
+		
+		int random = Random.Range(0, 4);
+
+		if (random == 0) { // LEFT
+			
+			animator.SetInteger("state", 3);
+			currentDirection = "left"; 
+			arrowManage.ShowArrow ("left");
+
+		} else if (random == 1) { //RIGHT
+			
+			animator.SetInteger("state", 4);
+			currentDirection = "right"; 
+			arrowManage.ShowArrow ("right");
+
+		} else if (random == 2) { // UP
+			
+			animator.SetInteger("state", 1);
+			currentDirection = "up";
+			arrowManage.ShowArrow ("up");
+
+		} else if (random == 3) { // DOWN
+			
+			animator.SetInteger("state", 2);
+			currentDirection = "down";  
+			arrowManage.ShowArrow ("down");
+		}
+	}
+
+	string GetKeyDown () {
+		if (Input.GetKeyDown (KeyCode.S))
+			return "down";
+		else if (Input.GetKeyDown (KeyCode.W))
+			return "up";
+		else if (Input.GetKeyDown (KeyCode.A))
+			return "left";
+		else if (Input.GetKeyDown (KeyCode.D))
+			return "right";
+		else
+			return null;
+	}
+}
+	
+
+/*public class dancing : MonoBehaviour {
 	public static bool gameOva = false; 
 	bool notDone = true; 
 	bool pressed = false; 
@@ -159,4 +273,4 @@ public class dancing : MonoBehaviour {
 		gameManager.gameOver();
 
 	}
-}
+}*/
