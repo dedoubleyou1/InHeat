@@ -1,0 +1,46 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: Giraffe.png (1024 x 2048)
+# $TexturePacker:SmartUpdate:c78fa34c52cff661bad2456fac126a30:919efd9cc977b93d0100c80b0a708d43:061dd2fa18008423ebaa48081ba23b42$
+#
+
+Giraffe_0000_Neck_lower;2;1853;174;193;0.5;0.5
+Giraffe_0001_Neck_middle;178;1832;141;214;0.5;0.5
+Giraffe_0002_Neck_upper;321;1869;150;177;0.5;0.5
+Giraffe_0003_Neck;473;1626;178;420;0.5;0.5
+Giraffe_0004_Head_C;653;1695;239;351;0.5;0.5
+Giraffe_0005_Torso_upper;2;1369;358;255;0.5;0.5
+Giraffe_0006_Torso_lower;362;1329;239;295;0.5;0.5
+Giraffe_0007_Shorts_crotch;603;1471;283;153;0.5;0.5
+Giraffe_0008_Shorts_left;2;1041;180;286;0.5;0.5
+Giraffe_0009_Shorts_right;184;1050;166;277;0.5;0.5
+Giraffe_0010_Thigh_left;352;955;169;372;0.5;0.5
+Giraffe_0011_Calves_left;523;1076;115;251;0.5;0.5
+Giraffe_0012_Hoof_left;640;1206;127;121;0.5;0.5
+Giraffe_0013_Thigh_right;769;955;169;372;0.5;0.5
+Giraffe_0014_Calves_right;2;703;115;250;0.5;0.5
+Giraffe_0015_Hoof_right;119;831;128;122;0.5;0.5
+Giraffe_0016_Shoulder_left;249;711;131;242;0.5;0.5
+Giraffe_0017_Forearm_left;382;802;91;151;0.5;0.5
+Giraffe_0018_Hand_left;475;834;130;119;0.5;0.5
+Giraffe_0019_Shoulder_right;607;712;133;241;0.5;0.5
+Giraffe_0020_Forearm_right;742;801;91;152;0.5;0.5
+Giraffe_0021_Hand_right;835;832;130;121;0.5;0.5
+Giraffe_0022_Ear_right_A;2;633;105;68;0.5;0.5
+Giraffe_0023_Ear_left_A;109;628;95;73;0.5;0.5
+Giraffe_0024_Eyes_mad_A;206;634;121;67;0.5;0.5
+Giraffe_0025_Eyes_sad_A;329;642;124;59;0.5;0.5
+Giraffe_0026_Eyes_bored_A;455;652;118;49;0.5;0.5
+Giraffe_0027_Eyes_default_A;575;629;120;72;0.5;0.5
+Giraffe_0028_Head_A;697;458;182;243;0.5;0.5
+Giraffe_0029_Ear_left_B;881;625;108;76;0.5;0.5
+Giraffe_0030_Ear_right_B;2;380;108;76;0.5;0.5
+Giraffe_0031_Eye_mad_B;112;397;64;59;0.5;0.5
+Giraffe_0032_Eye_bored_B;178;411;70;45;0.5;0.5
+Giraffe_0033_Eye_sad_B;250;396;61;60;0.5;0.5
+Giraffe_0034_Eye_default_B;313;389;61;67;0.5;0.5
+Giraffe_0035_Head_B;376;234;245;222;0.5;0.5

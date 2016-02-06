@@ -1,0 +1,17 @@
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/UnityEngine.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/UnityEditor.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Mono.Cecil.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Unity.DataContract.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/kirsten/Desktop/MateMe/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/kirsten/Desktop/MateMe/obj/Debug/Assembly-CSharp.dll
+/Users/kirsten/Desktop/MateMe/obj/Debug/Assembly-CSharp.dll.mdb
