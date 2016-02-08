@@ -8,6 +8,7 @@ public class dancing : MonoBehaviour {
 	private arrowManager arrowManage;
 	private GameManager gameManager;
 	public GameObject arrow;
+	public ParticleSystem heartParticles;
 
 
 	float  changeDirectionTimer = 0;
@@ -22,7 +23,6 @@ public class dancing : MonoBehaviour {
 		gameManager = Camera.main.GetComponent<GameManager> ();
 		arrowManage = arrow.GetComponent<arrowManager> ();
 		animator = GetComponent<Animator> ();
-
 		ChangeDirection ();
 	}
 
@@ -60,7 +60,9 @@ public class dancing : MonoBehaviour {
 				moveMadeForThisTurn = true;
 
 				if (directionPushed == currentDirection) { // If made the correct move
-					myAudio.Play (); 
+					myAudio.Play ();
+					if (heartParticles.isPlaying) heartParticles.Stop();
+					if (!heartParticles.isPlaying) heartParticles.Play();
 				} else { // If made wrong move
 					// Turn arrow red then fade out
 					playerDancingHealth--;
